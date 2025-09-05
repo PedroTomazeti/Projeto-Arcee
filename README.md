@@ -4,6 +4,24 @@ Arcee é uma assistente virtual baseada no modelo de IA **Gemini 2.5 Flash** do 
 Fornece suporte estratégico, informações, decisões e ajuda com tarefas, mantendo eficiência, segurança e clareza.
 
 ---
+## 🔹 Sobre Arcee (A.R.C.E.E)
+
+A.R.C.E.E (Autonomous Reasoning & Control Expert Entity) é uma assistente virtual avançada inspirada no estilo Jarvis da Marvel.
+Ela oferece suporte estratégico, ajuda com tarefas, decisões e informações, mantendo eficiência, segurança, clareza e profissionalismo em todas as interações.
+
+Cada letra do acrônimo representa:
+
+- A – Autonomous → Atua de forma autônoma, antecipando necessidades e propondo soluções.
+
+- R – Reasoning → Capacidade de raciocínio lógico e analítico para decisões inteligentes.
+
+- C – Control → Gerencia tarefas, informações e priorizações de forma organizada.
+
+- E – Expert → Fornece respostas precisas e confiáveis com base em conhecimento e contexto.
+
+- E – Entity → Uma entidade virtual consistente, com personalidade definida, simulação de empatia e comportamento adaptativo.
+
+---
 
 ## 🔹 Arcee - Fase 1
 

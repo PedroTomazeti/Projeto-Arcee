@@ -1,13 +1,18 @@
 import json
 from google import genai
 from google.genai import types
-from arcee import get_conn
+import sqlite3
+from Arcee.genai_config import load_genai
 
-client = genai.Client()
+DB_PATH = "arcee_context.db"
+client = load_genai()
 
 # -----------------------
 # Função para extrair perfil implícito
 # -----------------------
+def get_conn():
+    return sqlite3.connect(DB_PATH)
+
 def extract_profile_from_text(user_id: str, text: str):
     """
     Recebe o texto do usuário e tenta extrair informações que podem atualizar seu perfil.
@@ -29,7 +34,7 @@ def extract_profile_from_text(user_id: str, text: str):
             )
         )
 
-        output_text = response.output_text if hasattr(response, "output_text") else response.text
+        output_text = response.text if hasattr(response, "output_text") else response.text
         # Tenta converter em JSON
         profile_update = json.loads(output_text)
         if isinstance(profile_update, dict):

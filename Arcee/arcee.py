@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from modules.profile_manager import extract_profile_from_text
+from .genai_config import load_genai
 
 # ==============================
 # Configurações gerais
@@ -26,7 +27,7 @@ TOP_K_SEMANTIC = 4               # quantos trechos relevantes por busca semânti
 # ==============================
 # Inicialização do cliente Gemini
 # ==============================
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env.local"))
+load_dotenv(dotenv_path=r"C:\Projeto-Arcee\.env.local")
 API_KEY = os.getenv("GOOGLE_API_KEY")
 if not API_KEY:
     raise ValueError("Defina sua GOOGLE_API_KEY em .env.local")

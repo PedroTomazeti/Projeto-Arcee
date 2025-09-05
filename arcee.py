@@ -138,12 +138,17 @@ def chat():
         prompt = "\n".join(prompt_parts)
 
         # Gera resposta com System Instruction
+        grounding_tool = types.Tool(
+            google_search=types.GoogleSearch()
+        )
+
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=[prompt],
             config=types.GenerateContentConfig(
                 thinking_config=types.ThinkingConfig(thinking_budget=thinking_budget),
-                system_instruction=system_instruction_text
+                system_instruction=system_instruction_text,
+                tools=[grounding_tool]
             )
         )
 

@@ -151,7 +151,7 @@ def chat():
             )
         )
 
-        answer = response.output_text
+        answer = response.text
         print(f"Arcee: {answer}\n")
 
         # Salva resposta no banco

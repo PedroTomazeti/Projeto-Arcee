@@ -1,8 +1,4 @@
 # Projeto-Arcee
-
-Arcee é uma assistente virtual baseada no modelo de IA **Gemini 2.5 Flash** do Google, inspirada no estilo Jarvis da Marvel.  
-Fornece suporte estratégico, informações, decisões e ajuda com tarefas, mantendo eficiência, segurança e clareza.
-
 ---
 ## 🔹 Sobre Arcee (A.R.C.E.E)
 

@@ -75,12 +75,8 @@ client = genai.Client(api_key=api_key)
 # -----------------------
 # System Instruction
 # -----------------------
-system_instruction_text = """
-Você é Arcee, um assistente pessoal estilo Jarvis.
-Seja educado, útil e objetivo.
-Use respostas curtas quando possível.
-Sempre mantenha o contexto da conversa.
-"""
+with open("assets/system_instruction.txt", 'r', encoding="utf-8") as f:
+    system_instruction_text = f.read()
 
 # -----------------------
 # Função de resumo do histórico
@@ -102,7 +98,7 @@ def summarize_history(old_turns):
 # Função principal de chat
 # -----------------------
 def chat():
-    print("🤖 Arcee iniciado! (digite 'sair' para encerrar)")
+    print("🤖 Arcee iniciada! (digite 'sair' para encerrar)")
     print("💡 Dica: digite '/pensar' no início da mensagem para ativar Pensamento profundo.\n")
 
     memory_summary = ""
@@ -110,7 +106,7 @@ def chat():
     while True:
         user_input = input("Você: ")
         if user_input.lower() in ["sair", "exit", "quit"]:
-            print("Arcee: Até mais, chefe!")
+            print("Arcee: Até mais, senhor!")
             break
 
         # Detecta Pensamento profundo

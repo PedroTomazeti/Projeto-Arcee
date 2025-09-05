@@ -1,18 +1,24 @@
 # Projeto-Arcee
-Arcee é uma assistente virtual baseada no modelo de IA Gemini 2.5 Flash do google.
 
-# Arcee - Fase 1
+Arcee é uma assistente virtual baseada no modelo de IA **Gemini 2.5 Flash** do Google, inspirada no estilo Jarvis da Marvel.  
+Fornece suporte estratégico, informações, decisões e ajuda com tarefas, mantendo eficiência, segurança e clareza.
 
-Protótipo inicial de assistente pessoal estilo "Jarvis" usando a API Gemini 2.5 Flash do Google.  
-Esta primeira fase é apenas **um chat de texto no terminal**.
+---
+
+## 🔹 Arcee - Fase 1
+
+Protótipo inicial de assistente pessoal em **chat de texto no terminal**, com histórico e memória resumida.
 
 ---
 
 ## 🔹 Funcionalidades da Fase 1
 
-- Chat de texto simples no terminal
-- Histórico de conversa em memória (durante a sessão)
-- Utiliza a API Gemini 2.5 Flash do Google
+- Chat de texto no terminal com respostas rápidas.
+- Histórico de conversa **persistente** usando SQLite.
+- **Memória resumida** de conversas antigas para manter contexto sem sobrecarregar o modelo.
+- **Pensamento ativável**: use `/pensar` no início da mensagem para raciocínio mais profundo.
+- **Personalidade e System Instruction** definidas em `assets/system_instruction.txt`.
+- Utiliza a **API Gemini 2.5 Flash** do Google.
 
 ---
 
